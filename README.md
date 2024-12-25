@@ -1,8 +1,29 @@
-# JupyterNotebook-MicroK8s-app
+# JupyterNotebook MicroK8s App
+Example of how to simply run Jupyter Notebook with the Pytorch library preinstalled in MicroK8s. This is a simple setup with no persistent volumes on server side disc. 
 
-How to set up?
+## :grey_question: How to set up
 
-1) https://microk8s.io/docs/ Install by specifed version: ```sudo snap install microk8s --classic --channel=1.32```
-2) Use MicroK8s Registry running or Docker based Registry (Microk8s enable registry)
-3) Enable propriet add-ons
-4) GPU NVIDIA: there is starting pods some seconds so check it by ```microk8s kubectl get pods -A``` if is already started.
+:red_circle: I will started with linux based server https://ubuntu.com/
+
+:large_blue_circle: Ensure that you have installed https://www.docker.com/
+
+1) Install specifed version: ```sudo snap install microk8s --classic --channel=1.32```
+2) ```
+   sudo usermod -a -G microk8s $USER
+   mkdir -p ~/.kube
+   chmod 0700 ~/.kube
+   su - $USER
+   ```
+3) Enable propriet add-ons and wait until all system pods are **RUNNING** ```watch microk8s kubectl get nodes -A```
+
+    a) In our case we use MicroK8s Registry ```microk8s enable registry``` but also is ok use Docker based Registry there is different port
+
+    b) In our case we use MicroK8s Nvidia ```microk8s enable nvidia``` but pytorch can run also in cpu mode 
+
+## :orange_book: Docs
+
+https://microk8s.io/docs/ 
+
+## :information_source: Contacts
+
+:mailbox: Martin.Juricek1@vutbr.cz
