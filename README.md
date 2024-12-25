@@ -20,6 +20,15 @@ Example of how to simply run Jupyter Notebook with the Pytorch library preinstal
 
     b) In our case we use MicroK8s Nvidia ```microk8s enable nvidia``` but pytorch can run also in cpu mode, tensorflow mode, etc ... - there is needed change in docker base image [Dockerfile](Dockerfile)
 
+4) ```
+   Start Pod
+   user@user:~/JupyterNotebook-MicroK8s-app$ ./start_pod.sh
+   ```
+   ```
+   Stop Pod
+   user@user:~/JupyterNotebook-MicroK8s-app$ ./start_pod.sh
+   ```
+   
 ## :orange_book: Docs
 
 https://microk8s.io/docs/ 
