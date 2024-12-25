@@ -18,7 +18,7 @@ Example of how to simply run Jupyter Notebook with the Pytorch library preinstal
 
     a) In our case we use MicroK8s Registry ```microk8s enable registry``` but also is ok use Docker based Registry there is different port
 
-    b) In our case we use MicroK8s Nvidia ```microk8s enable nvidia``` but pytorch can run also in cpu mode 
+    b) In our case we use MicroK8s Nvidia ```microk8s enable nvidia``` but pytorch can run also in cpu mode, tensorflow mode, etc ... - there is needed change in docker base image [Dockerfile](Dockerfile)
 
 ## :orange_book: Docs
 
