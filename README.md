@@ -8,7 +8,9 @@ Example of how to simply run Jupyter Notebook with the Pytorch library preinstal
 :large_blue_circle: Ensure that you have installed https://www.docker.com/
 
 Note: For Nvdia GPUs
+
 :white_circle: Ensure that you have installed nvidia drivers
+
 :white_circle: Ensure that you have installed https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
 
 1) Install specifed version: ```sudo snap install microk8s --classic --channel=1.32```
