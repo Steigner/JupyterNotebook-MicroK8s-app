@@ -22,7 +22,7 @@ Note: For Nvdia GPUs
    chmod 0700 ~/.kube
    su - $USER
    ```
-3) Enable propriet add-ons and wait until all system pods are **RUNNING** ```watch microk8s kubectl get nodes -A```
+3) Enable propriet add-ons and wait until all system pods are **RUNNING** ```watch microk8s kubectl get pod -A```
 
     a) In our case we use MicroK8s Registry ```microk8s enable registry``` but also is ok use Docker based Registry there is different port
 
