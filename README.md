@@ -39,8 +39,4 @@ Note: For Nvdia GPUs
    
 ## :orange_book: Docs
 
-https://microk8s.io/docs/ 
-
-## :information_source: Contacts
-
-:mailbox: Martin.Juricek1@vutbr.cz
+https://microk8s.io/docs/
